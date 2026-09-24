@@ -20,14 +20,14 @@ export const ContactFooter = () => {
 
     emailjs
       .send(
-        "service_u1z3brd", // Your EmailJS Service ID
-        "template_xi465fn", // Your EmailJS Template ID
+        "service_u1z3brd", //EmailJS Service ID
+        "template_xi465fn", //EmailJS Template ID
         {
           from_name: formData.name,
           from_email: formData.email,
           message: formData.message,
         },
-        "cZAOZTMBzD6IzLBlk" // Your EmailJS Public Key
+        "cZAOZTMBzD6IzLBlk" // EmailJS Public Key
       )
       .then(
         (result) => {
