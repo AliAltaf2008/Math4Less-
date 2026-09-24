@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
-import studentPic1 from "./studentpic1.jpeg"; // Replace with actual path
-import studentPic2 from "./studentpic2.jpeg"; // Replace with actual path
-import studentPic3 from "./studentpic3.jpeg"; // Replace with actual path
+import studentPic1 from "./studentpic1.jpeg"; 
+import studentPic2 from "./studentpic2.jpeg"; 
+import studentPic3 from "./studentpic3.jpeg"; 
 import "./testimonials.css";
 
 const testimonialsData = [
@@ -40,7 +40,7 @@ export const Testimonials = () => {
           prevIndex === testimonialsData.length - 1 ? 0 : prevIndex + 1
         );
         setFade(true);
-      }, 500); // Matches the fade animation duration
+      }, 500); 
     }, 5000); // Change slide every 5 seconds
     return () => clearInterval(interval);
   }, []);
