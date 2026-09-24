@@ -15,7 +15,7 @@ export const NavBar = () => {
   ];
 
   const handleScroll = (id) => {
-    console.log(`Scrolling to section: ${id}`); // Debugging
+    console.log(`Scrolling to section: ${id}`); 
     if (id === "home") {
       window.scrollTo({ top: 0, behavior: "smooth" });
     } else {
