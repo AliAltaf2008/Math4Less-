@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import logo from "./Math4Less.png"; // Ensure correct path
+import logo from "./Math4Less.png"; 
 import home1 from "./home1.png";
 import home2 from "./home2.png";
 import "./styles.css";
@@ -17,7 +17,7 @@ export const HomePage = () => {
   const images = [home1, home2, logo];
 
   useEffect(() => {
-    // Typing animation logic
+    // Typing animation
     const handleTyping = () => {
       const currentPhrase = phrases[loopNum % phrases.length];
       setText((prev) =>
